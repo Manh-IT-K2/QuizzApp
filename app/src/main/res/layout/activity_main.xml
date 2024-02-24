@@ -8,6 +8,7 @@
     tools:context=".MainActivity" >
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp"
@@ -67,7 +68,7 @@
                         android:layout_weight="1"
                         android:paddingStart="4dp"
                         android:paddingEnd="4dp"
-                        android:text="TextView"
+                        android:text="1804"
                         android:textColor="@color/white" />
 
                     <ImageView
@@ -173,21 +174,21 @@
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
-                    android:layout_marginStart="24dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
                     android:layout_weight="1"
+                    android:text="Quez Categories"
                     android:textColor="@color/navy_blue"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:text="Quez Categories" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/orange"
                     android:layout_marginEnd="24dp"
-                    android:text="See all" />
+                    android:text="See all"
+                    android:textColor="@color/orange" />
             </LinearLayout>
 
             <LinearLayout
@@ -198,13 +199,13 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginBottom="8dp"
-                    android:elevation="3dp"
                     android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="0.5"
                     android:background="@drawable/white_background"
+                    android:elevation="3dp"
                     android:gravity="center"
                     android:orientation="horizontal">
 
@@ -230,13 +231,13 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="55dp"
-                    android:layout_weight="0.5"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="24dp"
                     android:layout_marginBottom="8dp"
-                    android:elevation="3dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_weight="0.5"
                     android:background="@drawable/white_background"
+                    android:elevation="3dp"
                     android:gravity="center"
                     android:orientation="horizontal">
 
@@ -259,6 +260,7 @@
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -267,13 +269,13 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginBottom="8dp"
-                    android:elevation="3dp"
                     android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="0.5"
                     android:background="@drawable/white_background"
+                    android:elevation="3dp"
                     android:gravity="center"
                     android:orientation="horizontal">
 
@@ -282,8 +284,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        app:srcCompat="@drawable/cat3"
-                        />
+                        app:srcCompat="@drawable/cat3" />
 
                     <TextView
                         android:id="@+id/textView10"
@@ -300,13 +301,13 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="55dp"
-                    android:layout_weight="0.5"
-                    android:layout_marginEnd="24dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="8dp"
-                    android:elevation="3dp"
                     android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="0.5"
                     android:background="@drawable/white_background"
+                    android:elevation="3dp"
                     android:gravity="center"
                     android:orientation="horizontal">
 
@@ -364,12 +365,26 @@
                     android:background="@drawable/purple_background"
                     android:gravity="center"
                     android:text="Try It Now"
-                    android:textStyle="bold"
                     android:textColor="@color/white"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/textView11"
                     app:layout_constraintTop_toBottomOf="@+id/textView11" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:cnb_iconSize="20dp"
+        app:cnb_menuResource="@menu/bottom_menu"
+        app:cnb_orientationMode="horizontal"
+        app:cnb_radius="50dp"
+        app:cnb_unselectedColor="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
