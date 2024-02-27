@@ -21,7 +21,7 @@
                 android:orientation="horizontal">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button"
+                    android:id="@+id/btnWeekly"
                     style="@android:style/Widget.Button"
                     android:layout_width="0dp"
                     android:layout_marginTop="24dp"
@@ -33,7 +33,7 @@
                     android:textColor="@color/white" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button1"
+                    android:id="@+id/btnMonthly"
                     style="@android:style/Widget.Button"
                     android:layout_width="0dp"
                     android:layout_marginTop="24dp"
@@ -46,7 +46,7 @@
                     android:textColor="@color/navy_blue" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button2"
+                    android:id="@+id/btnAllTime"
                     style="@android:style/Widget.Button"
                     android:layout_width="0dp"
                     android:layout_marginTop="24dp"
@@ -57,7 +57,270 @@
                     android:text="All time"
                     android:textColor="@color/navy_blue" />
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.333"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgTopTwo"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="2dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.7"
+                            app:shapeAppearanceOverlay="@style/circleImageview"
+                            app:strokeColor="#BFBFC0"
+                            app:strokeWidth="3dp" />
+
+                        <TextView
+                            android:id="@+id/txtTopTwo"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/circle_top_two"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/white"
+                            android:textSize="23dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@id/imgTopTwo"
+                            app:layout_constraintEnd_toEndOf="@+id/imgTopTwo"
+                            app:layout_constraintStart_toStartOf="@+id/imgTopTwo"
+                            app:layout_constraintTop_toBottomOf="@+id/imgTopTwo" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/txtTopTwoTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="title"
+                        android:textAlignment="center"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/score_top_two"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            app:srcCompat="@drawable/garnet" />
+
+                        <TextView
+                            android:id="@+id/txtScoreTopTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="10000"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.333"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgTopOne"
+                            android:layout_width="137dp"
+                            android:layout_height="137dp"
+                            android:padding="2dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:shapeAppearanceOverlay="@style/circleImageview"
+                            app:strokeColor="#FEBB3A"
+                            app:strokeWidth="3dp" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/circle_top_one"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="23dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@id/imgTopOne"
+                            app:layout_constraintEnd_toEndOf="@+id/imgTopOne"
+                            app:layout_constraintStart_toStartOf="@+id/imgTopOne"
+                            app:layout_constraintTop_toBottomOf="@+id/imgTopOne" />
+
+                        <ImageView
+                            android:id="@+id/imageView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-2dp"
+                            app:layout_constraintBottom_toTopOf="@+id/imgTopOne"
+                            app:layout_constraintEnd_toEndOf="@+id/imgTopOne"
+                            app:layout_constraintStart_toStartOf="@+id/imgTopOne"
+                            app:srcCompat="@drawable/crown" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/txtTopOneTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="title"
+                        android:textAlignment="center"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/score_top_one"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            app:srcCompat="@drawable/garnet" />
+
+                        <TextView
+                            android:id="@+id/txtScoreTopOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="10000"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.333"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgTopThree"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="2dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.7"
+                            app:shapeAppearanceOverlay="@style/circleImageview"
+                            app:strokeColor="#AE844F"
+                            app:strokeWidth="3dp" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/circle_top_three"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/white"
+                            android:textSize="23dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@id/imgTopThree"
+                            app:layout_constraintEnd_toEndOf="@+id/imgTopThree"
+                            app:layout_constraintStart_toStartOf="@+id/imgTopThree"
+                            app:layout_constraintTop_toBottomOf="@+id/imgTopThree" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/txtTitleTopThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="title"
+                        android:textAlignment="center"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/score_top_three"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            app:srcCompat="@drawable/garnet" />
+
+                        <TextView
+                            android:id="@+id/txtScoreTopThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="10000"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/leader_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="80dp"
+                android:layout_marginTop="16dp"/>
+
         </LinearLayout>
     </ScrollView>
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:cnb_iconSize="20dp"
+        app:cnb_menuResource="@menu/bottom_menu"
+        app:cnb_orientationMode="horizontal"
+        app:cnb_radius="50dp"
+        app:cnb_unselectedColor="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
