@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LeaderActivity">
+    android:background="@color/grey"
+    tools:context=".Activity.LeaderActivity">
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -308,7 +309,7 @@
                 android:layout_marginTop="16dp"/>
 
         </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
     <com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:id="@+id/menu"
         android:layout_width="match_parent"

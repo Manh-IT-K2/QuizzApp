@@ -17,7 +17,7 @@
         android:text="0" />
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/imgTopThree2"
+        android:id="@+id/pic"
         android:layout_width="57dp"
         android:layout_height="57dp"
         android:padding="2dp"
