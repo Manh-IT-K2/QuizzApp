@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txtAnswer"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/white_background"
+    android:elevation="3dp"
+    android:layout_marginBottom="8dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:textColor="@color/navy_blue"
+    android:textSize="16dp"
+    android:text="answer"
+    android:gravity="center_vertical">
+
+</TextView>
