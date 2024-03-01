@@ -64,14 +64,14 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:padding="12dp"
-                    tools:srcCompat="@drawable/left_arrow" />
+                    app:srcCompat="@drawable/left_arrow" />
 
                 <ImageView
                     android:id="@+id/rightArrow"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:padding="12dp"
-                    tools:srcCompat="@drawable/right_arrow" />
+                    app:srcCompat="@drawable/right_arrow" />
             </LinearLayout>
 
             <com.google.android.material.progressindicator.LinearProgressIndicator
@@ -102,7 +102,7 @@
             <ImageView
                 android:id="@+id/pic"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="200dp"
                 app:srcCompat="@drawable/usa"
                 android:layout_marginTop="8dp"
                 android:layout_marginStart="24dp"

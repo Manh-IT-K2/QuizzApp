@@ -10,12 +10,14 @@ data class QuestionModel(
     val answer_2 :  String?,
     val answer_3 : String?,
     val answer_4 : String?,
+    val correctAnswer : String?,
     val score : Int,
     val picPath : String?,
-    val clickedAnswer : String?
+    var clickedAnswer : String?
 ) : Parcelable{
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
+        parcel.readString(),
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
@@ -34,6 +36,7 @@ data class QuestionModel(
         parcel.writeString(answer_2)
         parcel.writeString(answer_3)
         parcel.writeString(answer_4)
+        parcel.writeString(correctAnswer)
         parcel.writeInt(score)
         parcel.writeString(picPath)
         parcel.writeString(clickedAnswer)
