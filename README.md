@@ -21,13 +21,13 @@ Build a basic interface for the question creation app
 ```
 ## [Project Demo Link](hi?)
 ## Some features of the site:
-Home Page                   |                   Introduce Page
+Home Screen                   |                   Question Screen
 :---------------------------------:        |      :------------------------------:
-<img src=".src/assets/images/screen_home_app.png" height="500">  | <img src=".src/assets/images/screen_question_app.png" height="500">
+<img src=".src/assets/screen_home_app.png" height="500">  | <img src=".src/assets/screen_question_app.png" height="500">
 
-Login Page                   |                   SignUp Page
+Rating Screen                   |                   Win Screen
 :---------------------------------:        |      :------------------------------:
-<img src=".src/assets/images/screen_rating_app.png" height="500">  | <img src=".src/assets/images/screen_win_app.png" height="500">
+<img src=".src/assets/screen_rating_app.png" height="500">  | <img src=".src/assets/screen_win_app.png" height="500">
 
 
 ### Make sure to star the repository if you find it helpful!
